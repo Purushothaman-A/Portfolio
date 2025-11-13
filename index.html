@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purushoth's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Purushothman's</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">IT Tasks</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Purushothman's</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">IT Infrastructure Tasks</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile" class="scroll-animate slide-up">
+      <div class="section__pic-container">
+        <img src="./assets/profile.jpg" alt="Subash profile picture" />
+      </div>
+      <div class="section__text scroll-animate slide-up">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Purushothman</h1>
+        <p class="section__text__p2">System Admin</p>
+        <div class="btn-container scroll-animate slide-up">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Purushothaman_2025.pdf', '_blank')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container" class="scroll-animate slide-up">
+          <a href="https://www.linkedin.com/in/purushothaman-arumugam-2b2308353/" target="_blank" class="social-icon linkedin">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:purushothaman.arm@gmail.com" class="social-icon email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container scroll-animate slide-up">
+          <img
+            src="./assets/profile.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container scroll-animate slide-up">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ Year <br />Desktop Support Engineer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p> BSc in Computer Science </p>
+            </div>
+          </div>
+          <div class="text-container scroll-animate slide-up">
+            <p>
+              Motivated IT Support and Networking Engineer with 2+ years of experience in system administration, LAN/WAN 
+setup, and troubleshooting. Completed a 6-month CCNA internship with practical exposure to router, switch, 
+and VLAN configuration. Skilled in IT operations, security systems, and multi-branch user support.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+<!-- exprience -->
+
+<section id="experience" class="experience-section">
+  <h2 class="experience-title scroll-animate slide-up">Experience</h2>
+  <div class="timeline">
+
+    <div class="timeline-item left scroll-animate slide-right" onclick="activateCard(this)">
+      <div class="timeline-content">
+        <img src="assets/logo-zerogravity.webp" alt="Zero Gravity Groups Logo" class="company-logo1">
+        <h3 class="company">Inspace Technologies</h3>
+        <p class="role">Desktop Support Engineer</p>
+        <span class="date">Apr 2025 - Present</span>
+      </div>
+    </div>
+
+    <div class="timeline-item right scroll-animate slide-left" onclick="activateCard(this)">
+      <div class="timeline-content">
+        <img src="assets/logo.png" alt="Vishnu Enterprises Logo" class="company-logo2">
+        <h3 class="company">Network Rhinos</h3>
+        <p class="role">Network Security</p>
+        <span class="date">Sep 2024 - Mar 2025</span>                         
+
+      </div>
+    </div>
+
+    <div class="timeline-item left scroll-animate slide-right" onclick="activateCard(this)">
+      <div class="timeline-content">
+        <img src="assets/LOGO WEB_edited.avif" alt="SS Constructions Logo" class="company-logo3">
+        <h3 class="company">VGP Golden Beach Resort</h3>
+        <p class="role">IT Suppport Engineer</p>
+        <span class="date">May 2023 - May 2024</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- SKILLS SECTION -->
+<section id="skills" class="scroll-animate slide-up">
+  <p class="section__text__p1 scroll-animate zoom-in">Explore My</p>
+  <h1 class="title scroll-animate zoom-in">Skills</h1>
+
+  <div class="skills-container">
+    <div class="skill-card">
+      
+      <span>Routing (RIP, OSPF)</span>
+    </div>
+    <div class="skill-card">
+      <span>Hardware & Printer Setup</span>
+    </div>
+    <div class="skill-card">
+      <span>Active Directory</span>
+    </div>
+    <div class="skill-card">
+      <span>Windows Server 2019</span>
+    </div>
+    <div class="skill-card">
+      <span>CCTV (NVR/DVR)</span>
+    </div>
+    <div class="skill-card">
+      <span>Biometric Access Control</span>
+    </div>
+    <div class="skill-card">
+      <span>Windows OS</span>
+    </div>
+   
+    <div class="skill-card">
+      <span>Wi-Fi & Access Point</span>
+    </div>
+    <div class="skill-card">
+      <span>Port Security</span>
+      
+    </div>
+    <div class="skill-card">
+      <span>Problem Solving</span>
+    
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+    <section id="projects" class="scroll-animate slide-up">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">IT Infrastructure Tasks</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              
+            </div>
+            <h2 class="experience-sub-title project-title">AD & User Management</h2>
+            <p>Managed AD accounts, groups, and permissions; implemented Group Policies for security compliance.</p>
+             <h2 class="experience-sub-title project-title">Server Maintenance & Backup</h2>
+            <p>Configured and maintained Windows Server 2019, scheduled automated backups, and tested restorations.</p>
+             <h2 class="experience-sub-title project-title">Network Setup & Troubleshooting</h2>
+            <p>Installed and configured switches, routers, and access points; resolved LAN/WAN issues.</p>
+            
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+             
+            </div>
+           
+             <h2 class="experience-sub-title project-title">Endpoint Deployment & Support</h2>
+            <p>Deployed and configured Windows 10/11 systems, installed software, and provided L1–L2 support.</p>
+             <h2 class="experience-sub-title project-title">Security & Monitoring</h2>
+            <p>Implemented antivirus/firewall policies, monitored systems, ensured IT security compliance, and performed regular system audits to maintain reliability.</p>
+             <h2 class="experience-sub-title project-title">Printer & Peripheral Management</h2>
+            <p>Installed and maintained network printers, scanners, and other devices; resolved hardware issues.</p>
+            <div class="btn-container">
+             
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+             
+            </div>
+            <h2 class="experience-sub-title project-title">Multi-Branch IT Support</h2>
+            <p>Provided remote and onsite IT support across multiple branches, troubleshooting network, hardware, and software issues to ensure uninterrupted operations.</p>
+             <h2 class="experience-sub-title project-title">Backup & Disaster Recovery Planning</h2>
+            <p>Created and tested backup schedules and recovery procedures, ensuring data integrity and business continuity in case of system failures.</p>
+             <h2 class="experience-sub-title project-title">User Training & Documentation</h2>
+            <p>Trained users on systems and security best practices; created IT process documentation.</p>
+            <div class="btn-container">
+             
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="contact" class="contact-section scroll-animate slide-up">
+      <h5>Get in Touch</h5>
+      <h2>Contact Me</h2>
+    
+      <div class="contact-container">
+        <!-- Left Side -->
+        <div class="contact-left scroll-animate slide-up">
+          <h3>Let's Connect</h3>
+          <p>
+            Motivated IT Support and Networking Engineer with 2+ years of experience in system administration, LAN/WAN 
+setup, and troubleshooting. Completed a 6-month CCNA internship with practical exposure to router, switch, 
+and VLAN configuration. Skilled in IT operations, security systems, and multi-branch user support.
+          </p>
+    
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/purushothaman-arumugam-2b2308353/" class="social-icon linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:purushothaman.arm@gmail.com" class="social-icon email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#" class="social-icon portfolio"><i class="fa-solid fa-circle-nodes"></i></a>
+          </div>
+        </div>
+    
+        <!-- Right Side (Form) -->
+        <div class="contact-right scroll-animate slide-up">
+          <form id="contact-form">
+            <input type="text" name="name" placeholder="Enter Your Name" required />
+            <input type="email" name="email" placeholder="Enter Your Mail Id" required />
+            <input type="text" name="subject" placeholder="Enter Subject Of The Mail" required />
+            <textarea placeholder="Enter Your Message Here" name="paragraphy" rows="5" required></textarea>
+            <button type="submit">SUBMIT <i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+          <p id="response-msg"></p>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Logo / Title -->
+        <h2 class="footer-logo">Purushoth</h2>
+    
+        <!-- Navigation Links -->
+        <ul class="footer-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">IT Tasks</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+    
+        <!-- Social Icons -->
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/purushothaman-arumugam-2b2308353/"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:purushothaman.arm@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    
+        <!-- Copyright -->
+        <p class="footer-copy">
+          © 2025 Purushothaman. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/16a8dcb72d.js" crossorigin="anonymous"></script>
+  </body>
+</html>
